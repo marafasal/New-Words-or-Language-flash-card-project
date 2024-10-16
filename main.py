@@ -27,9 +27,8 @@ def clickme():
 
 def known():
     list_french.remove(rand)
-
     known_words=pandas.DataFrame(list_french)
-    known_words.to_csv("data/words_to_learn.csv")
+    known_words.to_csv("data/words_to_learn.csv",index=False)
     clickme()
 
 
