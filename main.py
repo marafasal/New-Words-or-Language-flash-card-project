@@ -30,8 +30,7 @@ def known():
     known_words=pandas.DataFrame(list_french)
     known_words.to_csv("data/words_to_learn.csv",index=False)
     clickme()
-
-
+    
 def counter():
 
     canvas.itemconfig(French, text=rand["English"],fill="white")
